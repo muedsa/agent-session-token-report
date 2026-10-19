@@ -1,0 +1,25 @@
+# Python 运行产物
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# 本 skill 的运行产物：事实包与报告默认写进当前工作目录，
+# 在仓库里试跑一次就会留下这些文件，含真实会话的 token 与成本数据
+agent-report-*.md
+agent-report-*-facts.json
+
+# Qoder 生成的会话产物（token/credits 报告与 canvas），不属于 skill 内容
+.qoder-credits/
+
+# 本地实验目录与临时抓取的数据
+.probe/
+*.tmp
+tmp/
+
+# 编辑器与操作系统杂项
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
